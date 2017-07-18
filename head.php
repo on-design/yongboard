@@ -88,6 +88,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <?php if ($is_member) {  ?>
             <?php if ($is_admin) {  ?>
             <li><a href="<?php echo G5_ADMIN_URL ?>"><b>관리자</b></a></li>
+            <li><a href="<?php echo G5_ADM_URL ?>"><b>사용자 관리자</b></a></li>
             <?php }  ?>
             <li><a href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php">정보수정</a></li>
             <li><a href="<?php echo G5_BBS_URL ?>/logout.php">로그아웃</a></li>
@@ -156,9 +157,3 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- 콘텐츠 시작 { -->
 <div id="wrapper">
-    <div id="aside">
-        <?php echo outlogin('basic'); // 외부 로그인, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
-        <?php echo poll('basic'); // 설문조사, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
-    </div>
-    <div id="container">
-        <?php if ((!$bo_table || $w == 's' ) && !defined("_INDEX_")) { ?><div id="container_title"><?php echo $g5['title'] ?></div><?php } ?>

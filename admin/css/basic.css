@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/*
+---------------------------------------------------------------
+*
+* base
+*
+---------------------------------------------------------------
+*/
+/* CSS Document */
+/* css reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub,
+sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p,
+form, fieldset, input, table, tr, th, td {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+fieldset, img {
+    border: 0;
+    vertical-align: top;
+}
+
+address {
+    font-style: normal;
+}
+
+select {
+    /*-webkit-appearance: none;*/
+    /* 네이티브 외형 감추기 */
+    /*-moz-appearance: none;*/
+    /*appearance: none;*/
+    /*background: url(../img/caret.png) no-repeat 90% 50%;*/
+    /*border-radius: 0;*/
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+/* a-style */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+
+legend {
+    display: none;
+}
+
+caption {
+    display: none;
+}
+
+.sound_only {
+    display: none;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    font-style: 100;
+    src: url("../fonts/NanumGothic.eot");
+    src: url("../fonts/NanumGothic.eot") format("embedded-opentype"), url("../fonts/NanumGothic.woff") format("woff"), url("../fonts/NanumGothic.otf") format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: 100;
+    src: url("../fonts/NanumSquareR.eot");
+    src: url("../fonts/NanumSquareR.eot") format("embedded-opentype"), url("../fonts/NanumSquareR.woff") format("woff"), url("../fonts/NanumSquareR.otf") format("truetype");
+}
+
+body {
+    font-family: 'Roboto', 'Arial', 'Malgun Gothic', '맑은 고딕', sans-serif;
+}
+
+/* 모바일 폰트 리사이징 */
+
+@media (max-width:360px){html{font-size:12px;}}
+@media (min-width:361px) and (max-width:550px){html{font-size:13px;}}
+@media (min-width:551px) and (max-width:767px){html{font-size:14px;}}
+@media (min-width:768px) and (max-width:1023px){html{font-size:14px;}}
+@media (min-width:1024px) {html{font-size:15px;}}

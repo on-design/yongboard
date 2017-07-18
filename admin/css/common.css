@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+body {
+	background-color: #eef0f4;
+}
+
+
+#wrapper {
+	box-sizing: border-box;
+	position: relative;
+	padding-top: 60px;
+	margin-left: 250px;
+	padding-bottom: 60px;
+	transition-delay: .2s;
+	transition-duration: .2s;
+	transition-property: all;
+}
+
+.adm_container {
+	width: 100%;
+	padding: 20px 30px;
+	box-sizing: border-box;
+}
+
+.box_wrap {
+    margin-bottom: 20px;
+    border: 1px solid #e2e2e2;
+    background-color: #ffffff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+.box_wrap .box_header {
+	color: #333333;
+	height: 20px;
+	line-height: 20px;
+	background-color: #F4F4F4;
+	background-color: #f1f1f1;
+	background-image: -moz-linear-gradient(top, #f4f4f4, #ececec);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+	background-image: -webkit-linear-gradient(top, #f4f4f4, #ececec);
+	background-image: -o-linear-gradient(top, #f4f4f4, #ececec);
+	background-image: linear-gradient(to bottom, #f4f4f4, #ececec);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff4f4f4', endColorstr='#ffececec', GradientType=0);
+	border-bottom: 1px solid #d5d5d5;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 10px;
+	font-family: 'NanumSquare';
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-weight: bold;
+}
+
+.box_wrap .box_content {
+	width: 100%;
+	overflow: hidden;
+	padding: 10px 15px 15px;
+	box-sizing: border-box;
+}
+
+#admTitle {
+	width: 100%;
+	overflow: hidden;
+}
+
+#admTitle h2 {
+	font-size: 24px;
+	line-height: 1em;
+	color: #454545;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	position: relative;
+	font-family: 'NanumSquare';
+	font-weight: bold;
+}
+
+#admTitle h2:after {
+	content: '';
+	display: block;
+	width: 60px;
+	height: 2px;
+	background: #333;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#admTitle h2 i {
+	line-height: 24px;
+	padding-right: 5px;
+}
+
+
+input[type=text],
+input[type=password] {
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: none;
+	line-height: 1.42857143;
+	padding: 8px 14px;
+	height: 38px;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+
+select {
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: none;
+	line-height: 1.42857143;
+	padding: 4px 3px;
+	height: 30px;
+	box-sizing: border-box;	
+	vertical-align: middle;
+}
+
+textarea {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: none;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.anchor {
+	overflow: hidden;
+	margin: 0 0 30px;
+	border: 1px solid #ccc;
+	display: table;
+}
+
+.anchor ul li {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: .9rem;
+}
+
+.anchor ul li a {
+	padding: 8px 14px;
+	display: block;
+	trnasition: all .3s ease;
+	background: #fff;
+}
+
+.anchor ul li .on {
+	background: #3498db;
+	color: #fff;
+	display: block;
+}

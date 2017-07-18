@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+
+#gnb {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	z-index: 50;
+}
+
+#gnb .brand_logo {
+	height: 60px;
+	background: #3498db;
+	float: left;
+	z-index: 20;
+	position: relative;
+	transition: all .2s;
+}
+
+#gnb .brand_logo h1 {
+	color: #fff;
+	font-weight: 700;
+	text-shadow: 0 1px 3px #444;
+	line-height: 60px;
+	text-align: center;
+}
+
+#gnb .nav_wrapper {
+	height: 60px;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	position: relative;
+	z-index: 10;
+}
+
+#gnb .nav_wrapper button {
+	float: left;
+	background: none;
+	border: none;
+	font-size: 20px;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+
+#gnb .nav_wrapper button:focus {
+	outline: none;
+}
+
+#gnb .nav_wrapper ul {
+	float: right;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+#gnb .nav_wrapper ul li {
+	float: left;
+	font-size: .8rem;
+	line-height: 60px;
+	margin-left: 10px;
+	padding-left: 10px;
+	position: relative;
+}
+
+#gnb .nav_wrapper ul li:first-child:before {
+	display: none;
+}
+
+#gnb .nav_wrapper ul li:before {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 12px;
+	background: #666;
+	position: absolute;
+	left: 0;
+	top: 24px;
+}
+
+#aside {
+	height: 100%;
+	z-index: 30;
+	position: fixed;
+	top: 60px;
+	left: 0;
+	background: #2c3037;
+	transition: all .2s;
+}
+
+#aside ul li {
+	width: 100%;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+#aside ul li a {
+	color: #919293;
+	transition: all .2s ease;
+	display: block;
+	text-shadow: 0 1px 3px #222;
+}
+
+#aside ul li:hover a {
+	color: #fff;
+}
+
+#aside ul li a i {
+	width: 40px;
+}
+
+.navi_on {
+	width: 250px;
+}
+
+.navi_on h1 {
+	display: block;
+}
+
+.navi_on ul li a {
+	padding: 16px 30px;
+}
+
+.navi_off {
+	width: 60px;
+}
+
+.navi_off h1 {
+	display: none;
+}
+
+.navi_off ul li a {
+	padding: 16px 0;
+	text-align: center;
+}
+
+.navi_off ul li i {
+	font-size: 30px;
+}
+
+.navi_off ul li a span {
+	display: none;
+}
+
+
+
+
+/* configForm */
+
+#cofigform {
+	width: 100%;
+	overflow: hidden;
+}
+
+#configform .btn_frmline {
+	font-size: .9rem;
+	border: 1px solid #ccc;
+	padding: 6px 12px;
+	margin-left: 10px;
+	border-radius: 3px;
+	background-color: #00afd1;
+	border-color: #009ab8;
+	color: #fff;
+}
+
+#configform .btn_frmline:hover {
+	background-color: #00849e;
+    border-color: #00667a;	
+}
+
+#configform .frm_info {
+	font-size: .9rem;
+	line-height: 1.4em;
+	color: #666;
+	margin: 0 0 5px;
+	display: block;
+}
+
+#configform .tab_content {
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+}
+
+#configform #anc_cf_basic {
+	visibility: visible;
+	height: auto;
+}
+
+#anc_cf_basic .cf_default {
+	width: 57%;
+	float: left;
+	margin-right: 3%;
+}
+
+#anc_cf_basic .cf_ip {
+	width: 40%;
+	float: left;
+}
+
+#anc_cf_basic .cf_tag {
+	width: 100%;
+	clear: both;
+}
+
+#anc_cf_basic .cf_default dl {
+	width: 50%;
+	float: left;
+	margin: 0 0 10px;
+}
+
+#anc_cf_basic .cf_default .wid_full {
+	width: 100%;
+}
+
+#anc_cf_basic dl dt {
+	margin: 0 0 5px;
+	font-size: .9rem;
+}
+
+#anc_cf_basic .cf_ip dl {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 0 10px;
+}
+
+#anc_cf_basic .cf_ip dl dd {
+	width: 100%;
+}
+
+#anc_cf_basic .cf_ip dl dd textarea {
+	width: 100%;
+	min-height: 106px;
+}
+
+#anc_cf_basic .cf_tag dl {
+	width: 47%;
+	float: left;
+}
+
+#anc_cf_basic .cf_tag dl:first-child {
+	margin-right: 6%;
+}
+
+
+#anc_cf_basic .cf_tag dl dd {
+	width: 100%;
+}
+
+#anc_cf_basic .cf_tag dl dd textarea {
+	width: 100%;
+	min-height: 100px;
+}
+
+
+/* 회원가입 설정 */
+#anc_cf_join .box_content table {
+	width: 100%;
+}
+
+#anc_cf_join .box_content table th {
+	font-weight: normal;
+	text-align: left;
+	width: 200px;
+}
+
+#anc_cf_join .box_content table td {
+}
+
+#anc_cf_join .box_content table td textarea {
+	width: 100%;
+}
+
+/* 본인확인 설정 */
+#anc_cf_cert .cert_opt {
+	display: table;
+}
+
+#anc_cf_cert .cert_opt dl {
+	float: left;
+	padding-right: 30px;
+	box-sizing: border-box;
+}
+
+#anc_cf_cert .cert_opt dl dt {
+	font-size: 15px;
+	margin: 0 0 5px;
+}
+
+#anc_cf_cert .cert_tbl table {
+	width: 100%;
+}
+
+#anc_cf_cert .cert_tbl table tr {
+	border-bottom: 1px solid #ccc;
+}
+
+#anc_cf_cert .cert_tbl table th {
+	font-weight: normal;
+	text-align: left;
+}
+
+#anc_cf_cert .cert_tbl table td {
+	padding: 15px 0;
+}
+
+/* SNS 설정 */
+#anc_cf_sns table {
+	width: 100%;
+}
+
+#anc_cf_sns table th {
+	font-weight: normal;
+	text-align: left;
+}
+
+#anc_cf_sns table td {
+	padding: 10px 0;
+}
+
+/* SMS 설정 */
+#anc_cf_sms table {
+	width: 100%;
+}
+
+#anc_cf_sms table th {
+	font-weight: normal;
+	text-align: left;
+}
+
+#anc_cf_sms table td {
+	padding: 10px 0;
+}
+
+#anc_cf_sms table td .btn_frmline {
+	margin-left: 0;
+}
+
+#anc_cf_sms table td input,
+#anc_cf_sms table td select {
+	display: block;
+	margin: 5px 0 0;
+}
+
+
+/* 회원관리 */
+
+#memberList {
+	width: 100%;
+}
+
+
+
+#mainIdx {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://www.meistertask.com/images/wallpapers/169297610.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: -1;
+}
+
+#mainIdx #clock {
+	width: 600px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+	margin-left: -200px;
+	z-index: 100;
+	color: #fff;
+	font-size: 120px;
+}

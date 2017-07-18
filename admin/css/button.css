@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+
+/* button */
+
+.btn_confirm {
+	float: right;
+	margin: 20px 0 0;
+}
+
+.btn_list {
+	width: 100%;
+	overflow: hidden;
+	text-align: left;
+	margin: 20px 0;
+}
+
+.btn01 {
+	padding: 6px 12px;
+	border-color: rgba(0,0,0,0.15);
+	box-shadow: 0 -1px 0 rgba(0,0,0,0.15) inset;
+	-webkit-appearance: none;
+	outline: none!important;
+	-webkit-transition: all .1s;
+	-o-transition: all .1s;
+	transition: all .1s;
+	font-size: .9rem;
+	box-sizing: border-box;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	line-height: 1.42857143;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.btn_default {
+
+}
+
+.btn_success {
+	color: #ffffff;
+    background-color: #27ae60;
+    border-color: #229955;
+}
+.btn_success:hover {
+	background-color: #1e8449;
+	border-color: #176739;
+}
+
+.btn_submit {
+	color: #fff;
+	background-color: #2d2d2d;
+	border-color: #2d2d2d;
+}
+
+.btn_cancel {
+	color: #333333;
+	background-color: #ffffff;
+	border-color: #cccccc;
+}
+.btn_cancel:hover {
+	color: #333333;
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+
+.btn_modify {
+	color: #333333;
+	background-color: #ffffff;
+	border-color: #cccccc;
+}
+
+.btn_modify:hover {
+	color: #333333;
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+
+.btn_search {
+
+}
+
+
+.add_btn_wrap {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 0 15px;
+	text-align: right;
+}
+
+.btn_add {
+	color: #ffffff;
+    background-color: #00afd1;
+    border-color: #009ab8;
+}
+
+.btn_add:hover {
+	color: #ffffff;
+	background-color: #00849e;
+	border-color: #00667a;
+}
+
+.btn_delete {
+	color: #fff;
+	background-color: #2d2d2d;
+	border-color: #2d2d2d;
+}
+
+.btn_delete:hover {
+	color: #fff;
+	background-color: #141414;
+	border-color: #0e0e0e;
+}
+
+
+/* pagination */

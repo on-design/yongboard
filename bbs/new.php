@@ -110,7 +110,7 @@ for ($i=0; $row=sql_fetch_array($result); $i++) {
 
 $write_pages = get_paging(G5_IS_MOBILE ? $config['cf_mobile_pages'] : $config['cf_write_pages'], $page, $total_page, "?gr_id=$gr_id&amp;view=$view&amp;mb_id=$mb_id&amp;page=");
 
-include_once($new_skin_path.'/new.skin.php');
+include_once($new_skin_path.'basic/new.skin.php');
 
 include_once('./_tail.php');
 ?>
